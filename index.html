@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vibe Project · 一个安静好看的静态站点</title>
+  <meta name="description" content="零依赖、零构建的静态站点模板：一个 HTML 文件、一份 CSS、一段 JS，放到哪都能跑。">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Vibe Project">
+  <meta property="og:description" content="零依赖、零构建的静态站点模板。">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="主导航">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">◈</span>
+        Vibe&nbsp;Project
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">特性</a></li>
+        <li><a href="#about">关于</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" type="button"
+              aria-label="切换深浅色主题" aria-pressed="false">🌙</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <p class="eyebrow">静态站点 · 无框架 · 无构建</p>
+      <h1>把想法上线，<br>别把周末搭进去。</h1>
+      <p class="lede">
+        一个 HTML 文件、一份样式表、一小段脚本。没有 <code>node_modules</code>，
+        没有构建流水线，双击就能看，推送就能发。
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#features">看看它有什么</a>
+        <a class="btn btn-ghost" href="#about">它为什么这么小</a>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <h2>三件小事，做到位</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="card-icon" aria-hidden="true">⚡</span>
+          <h3>打开就是最后形态</h3>
+          <p>浏览器直接渲染你写的 HTML，没有打包、没有热更新守护进程，也没有"为什么线上和我本地不一样"。</p>
+        </article>
+        <article class="card">
+          <span class="card-icon" aria-hidden="true">🪶</span>
+          <h3>体积小到可以忽略</h3>
+          <p>整站连同样式和脚本不过几十 KB，首屏不需要等待任何第三方脚本下载。</p>
+        </article>
+        <article class="card">
+          <span class="card-icon" aria-hidden="true">🧳</span>
+          <h3>放到哪都能跑</h3>
+          <p>GitHub Pages、Netlify、一台装了 nginx 的旧机器、甚至 U 盘——只要能发文件，它就能用。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section narrow">
+      <h2>关于这个项目</h2>
+      <p>
+        这是一个起点，而不是成品。它故意保持朴素：没有依赖，没有配置，
+        没有需要定期升级的东西。你可以直接改文案、换配色，或者把它当作
+        更大项目的静态外壳。
+      </p>
+      <p>
+        所有内容都在版本控制里，提交历史就是改动记录。想回退？<code>git revert</code> 就好。
+      </p>
+    </section>
+
+    <section id="contact" class="section narrow">
+      <h2>联系</h2>
+      <p>想聊点什么，或者发现了错别字，欢迎在仓库里开一个 issue。</p>
+      <p><a class="link" id="repo-link" href="#contact">项目仓库</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><span id="year">2025</span> · Vibe Project · 用原生 HTML、CSS 和一点 JS 写成</p>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

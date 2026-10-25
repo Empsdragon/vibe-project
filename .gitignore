@@ -1,0 +1,58 @@
+# ---- 机密：任何形式的凭证都不入库 ----
+.env
+.env.*
+!.env.example
+*.env
+secrets.json
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+id_rsa*
+id_ed25519*
+.htpasswd
+.npmrc
+.npmrc.local
+.netrc
+
+# ---- Python / 虚拟环境 ----
+venv/
+.venv/
+env/
+ENV/
+virtualenv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ---- 数据库与私有数据 ----
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+instance/
+data/
+private/
+*.csv
+*.xlsx
+*.log
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 本地临时 ----
+.tmp/
+tmp/
+.cache/
